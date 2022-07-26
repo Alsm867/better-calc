@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Math from './components/math'
+import Math from './components/Wrapper.js'
 
 function App() {
   return (
