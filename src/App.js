@@ -1,15 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import Math from './components/Wrapper.js'
+import Wrapper from "./components/Wrapper";
+import Screen from "./components/Screen";
+import ButtonBox from "./components/ButtonBox";
+import Button from "./components/Button";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Math />
-      </header>
-    </div>
+    <Wrapper>
+      <Screen value="0" />
+      <ButtonBox>
+        <Button
+          className=""
+          value="0"
+          onClick={() => {
+            console.log("Button clicked!");
+          }}
+        />
+      </ButtonBox>
+    </Wrapper>
   );
-}
+};
 
-export default App;
+export default App; 
